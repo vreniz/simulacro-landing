@@ -110,7 +110,7 @@ Three breakpoints cover all common screen sizes:
 1. Clone or download the repository:
 
 ```bash
-git clone https://github.com/your-username/simulacro-landing.git
+git clone https://github.com/vreniz/simulacro-landing.git
 ```
 
 2. Open the project folder and locate `index.html`.
