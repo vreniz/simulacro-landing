@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sabores Bajo la Luna – Night Food Festival</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- HEADER — CSS-only burger menu via hidden checkbox -->
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-hidden="true" />
+
+      <a href="#hero" class="brand">
+        <span>SABORES</span> BAJO LA LUNA
+      </a>
+
+      <label for="menu-toggle" class="hamburger" aria-label="Toggle navigation">&#9776;</label>
+
+      <ul class="nav-links">
+        <li><a href="#dates">Dates</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#zones">Zones</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#video">Video</a></li>
+      </ul>
+
+      <a href="#tickets" class="nav-cta btn">Get Tickets</a>
+
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO — background image/gradient defined in CSS via .hero::before -->
+    <section class="hero" id="hero">
+
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <div class="hero-waves" aria-hidden="true">
+        <svg viewBox="0 0 1200 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,40 C200,0 400,80 600,40 C800,0 1000,80 1200,40" stroke="#c8922a" stroke-width="2.5" fill="none" opacity="0.9"/>
+          <path d="M0,54 C200,14 400,94 600,54 C800,14 1000,94 1200,54" stroke="#c8922a" stroke-width="1.5" fill="none" opacity="0.55"/>
+        </svg>
+      </div>
+
+      <div class="hero-moon" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="eyebrow">May 2026 · Caribbean Nights Edition</p>
+          <h1>
+            Una noche,<br>
+            mil sabores,<br>
+            experiencias<br>
+            inolvidables.
+          </h1>
+          <p class="hero-desc">Enjoy street food, live cooking shows, desserts, music and a glowing night market atmosphere.</p>
+          <div class="hero-actions">
+            <a href="#dates" class="btn">View Dates</a>
+            <a href="#zones" class="btn secondary">Explore Zones</a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="hero-card badge-card" id="badgeCard">
+            <p class="card-label">Main Attraction</p>
+            <h3>Street Food Show</h3>
+            <p>Chefs, music and local flavors in one immersive experience.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DATES -->
+    <section class="section dates-section" id="dates">
+      <div class="section-title">
+        <p class="eyebrow">Festival Route</p>
+        <h2>Upcoming Dates</h2>
+      </div>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>City</th>
+              <th>Schedule</th>
+              <th>Main Attraction</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>12 May</td>
+              <td>Barranquilla</td>
+              <td>6:00 PM</td>
+              <td>Street Food Show</td>
+            </tr>
+            <tr>
+              <td>19 May</td>
+              <td>Cartagena</td>
+              <td>7:00 PM</td>
+              <td>Live Cooking</td>
+            </tr>
+            <tr>
+              <td>26 May</td>
+              <td>Santa Marta</td>
+              <td>5:30 PM</td>
+              <td>Dessert Contest</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about-section" id="about">
+      <div class="about-image">
+      <img src="assets/img/people.webp" alt="Night food festival" />
+      </div>
+      <div class="about-content">
+        <p class="eyebrow">About the Festival</p>
+        <h2>Food, culture and music under the stars.</h2>
+        <p>Sabores Bajo la Luna brings together local chefs, urban food trucks, live artists and families looking for a vibrant night experience.</p>
+        <ul class="experience-list">
+          <li>• Live cooking shows</li>
+          <li>• International cuisine stations</li>
+          <li>• Acoustic sessions and DJs</li>
+          <li>• Photo spots and night market areas</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ZONES -->
+    <section class="section zones-section" id="zones">
+      <div class="section-title">
+        <p class="eyebrow">Choose your flavor</p>
+        <h2>Food Zones</h2>
+      </div>
+      <div class="zones-grid">
+
+        <article class="zone-card">
+          <div class="zone-front">
+            <span>🌮</span>
+            <h3>Street</h3>
+            <p>Tacos, burgers and local bites.</p>
+          </div>
+          <div class="zone-back street">
+            <div class="zone-back-content">
+              <h3>Street</h3>
+              <p>Tacos, burgers and local bites.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="zone-card">
+          <div class="zone-front">
+            <span>🍜</span>
+            <h3>Asian</h3>
+            <p>Ramen, noodles and fusion plates.</p>
+          </div>
+          <div class="zone-back asian">
+            <div class="zone-back-content">
+              <h3>Asian</h3>
+              <p>Ramen, noodles and fusion plates.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="zone-card">
+          <div class="zone-front">
+            <span>🍮</span>
+            <h3>Desserts</h3>
+            <p>Sweet experiences and contests.</p>
+          </div>
+          <div class="zone-back desserts " >
+            <div class="zone-back-content">
+              <h3>Desserts</h3>
+              <p>Sweet experiences and contests.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="zone-card">
+          <div class="zone-front">
+            <span>🥤</span>
+            <h3>Drinks</h3>
+            <p>Mocktails, coffee and fresh juices.</p>
+          </div>
+          <div class="zone-back drinks">
+            <div class="zone-back-content">
+              <h3>Drinks</h3>
+              <p>Mocktails, coffee and fresh juices.</p>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- GALLERY (editar mucho div)-->
+     <!-- GALLERY -->
+    <section class="section gallery-section" id="gallery">
+      <div class="section-title">
+          <p class="eyebrow">Visual Taste</p>
+          <h2>Gallery</h2>
+      </div>
+      <div class="gallery-grid">
+
+        <div class="gallery-card gallery-card--large">
+            <div class="gallery-card-inner">
+              <img src="assets/img/night-market.jpg" alt="Night Market" />
+            </div>
+            <p class="gallery-label">Night Market</p>
+         </div>
+
+        <div class="gallery-card">
+            <div class="gallery-card-inner">
+              <img src="assets/img/live-cooking.jpg" alt="Live Cooking" />
+           </div>
+            <p class="gallery-label">Live Cooking</p>
+         </div>
+
+        <div class="gallery-card">
+            <div class="gallery-card-inner">
+              <img src="assets/img/dessert-bar.jpg" alt="Dessert Bar" />
+            </div>
+            <p class="gallery-label">Dessert Bar</p>
+         </div>
+
+          <div class="gallery-card gallery-card--wide">
+            <div class="gallery-card-inner">
+              <img src="assets/img/food-truck.jpg" alt="Food Trucks" />
+            </div>
+            <p class="gallery-label">Food Trucks</p>
+          </div>
+
+        </div>
+    </section>
+
+
+    <!-- VIDEO -->
+    <section class="section video-section" id="video">
+      <div class="section-title">
+        <p class="eyebrow">Experience the magic</p>
+        <h2>Festival Highlights</h2>
+      </div>
+      <div class="video-container">
+        <iframe width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/sFXbT6sqmBA?si=jl65risDdGsEzcl_" 
+        title="YouTube video player" 
+        frameborder="0"
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" 
+          allowfullscreen>
+
+        </iframe>
+
+      </div>
+      <p class="video-description">Watch our highlights from previous editions and get a taste of what awaits you at this year's festival.</p>
+    </section>
+
+    <!-- TICKETS -->
+    <section class="tickets" id="tickets">
+      <h2>Ready for the next night?</h2>
+      <p>Register early and receive festival updates, schedules and special access.</p>
+      <form class="ticket-form" action="#" method="post">
+        <label class="sr-only" for="email">Email</label>
+        <input id="email" type="email" placeholder="your@email.com" required />
+        <button type="submit">Join List</button>
+      </form>
+    </section>
+
+     <!-- ========== SPONSORS SECTION ========== -->
+    <section class="section sponsors" id="sponsors" aria-label="Our sponsors">
+      <div class="container">
+        <h2 class="section-title sponsors-title">Our Sponsors</h2>
+        <p class="sponsor-subtitle">Made possible by our partners</p>
+        <div class="sponsors-grid">
+          <div class="sponsor-card">
+            <div class="sponsor-logo">
+              <img src="assets/icons/sponsor-bavaria.png" alt="Bavaria" loading="lazy" onerror="this.style.display='none'" />
+            </div>
+            <span class="sponsor-name">Bavaria</span>
+          </div>
+          <div class="sponsor-card">
+            <div class="sponsor-logo">
+              <img src="assets/icons/sponsor-bancolombia.jpg" alt="Bancolombia" loading="lazy" onerror="this.style.display='none'" />
+            </div>
+            <span class="sponsor-name">Bancolombia</span>
+          </div>
+          <div class="sponsor-card">
+            <div class="sponsor-logo">
+              <img src="assets/icons/sponsor-avianca.png" alt="Avianca" loading="lazy" onerror="this.style.display='none'" />
+            </div>
+            <span class="sponsor-name">Avianca</span>
+          </div>
+          <div class="sponsor-card">
+            <div class="sponsor-logo">
+              <img src="assets/icons/sponsor-exito.png" alt="Éxito" loading="lazy" onerror="this.style.display='none'" />
+            </div>
+            <span class="sponsor-name">Éxito</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-section">
+      <h5>Sabores Bajo la Luna</h5>
+      <p>Night food festival · Colombia Caribbean Tour</p>
+    </div>
+    <div class="footer-section">
+      <h6>Contact</h6>
+      <ul class="contact-list">
+        <li><a href="tel:+573001234567">📞 +57 300 123 4567</a></li>
+        <li><a href="mailto:info@saboresbajolaluna.com">✉️ info@saboresbajolaluna.com</a></li>
+        <li>📍 Cartagena, Colombia</li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h6>Follow Us</h6>
+      <div class="social-links">
+        <a href="https://instagram.com/saboresbajolaluna" target="_blank" rel="noopener noreferrer">
+          <img src="/assets/icons/instagram.svg" alt="Instagram" />
+        </a>
+        <a href="https://facebook.com/saboresbajolaluna" target="_blank" rel="noopener noreferrer">
+          <img src="/assets/icons/facebook.svg" alt="Facebook" />
+        </a>
+        <a href="https://twitter.com/saboresbajolaluna" target="_blank" rel="noopener noreferrer">
+          <img src="/assets/icons/twitter.svg" alt="Twitter" />
+        </a>
+        <a href="https://youtube.com/saboresbajolaluna" target="_blank" rel="noopener noreferrer">
+          <img src="/assets/icons/youtube.svg" alt="Youtube" />
+        </a>
+      </div>
+    </div>
+    <div class="footer-section">
+      <h6>Quick Links</h6>
+      <ul class="footer-links">
+        <li><a href="#dates">Dates</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#tickets">Get Tickets</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Night Food Festival. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+    // Animate the badge card on page load after a short delay
+    window.addEventListener('load', function () {
+    const badge = document.getElementById('badgeCard');
+    if (!badge) return;
+
+    // Aparece a los 600ms
+    setTimeout(function () {
+      badge.classList.add('badge-visible');
+    }, 600);
+
+    // Desaparece a los 3 segundos después de aparecer
+    setTimeout(function () {
+      badge.classList.remove('badge-visible');
+    }, 3600);
+  });
+
+    // Cierra el menú burger al hacer click en cualquier enlace del nav
+  document.querySelectorAll('.nav-links a').forEach(function(link) {
+    link.addEventListener('click', function() {
+      document.getElementById('menu-toggle').checked = false;
+    });
+  });
+  </script>
+
+</body>
+</html>
