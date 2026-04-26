@@ -151,7 +151,7 @@ Place your images in `assets/img/` and update the paths in the relevant rules:
 
 ## 👩🏻‍💻 Author
 
-**Vanessa Fontalvo Reniz**
+**Vanessa Fontalvo Reniz** <br>
 Systems & Computing Engineer | Frontend Developer
 
 ---
