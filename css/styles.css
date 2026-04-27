@@ -12,6 +12,7 @@
     --text: #f0ece6;
     --muted: #8a7a6a;
     --cyan: #5bc8c8;
+    /* --color-surface :#110d1a; */
     --shadow: 0 8px 40px rgba(0, 0, 0, 0.6);
 
     --font-display: 'Bebas Neue', sans-serif;
@@ -870,7 +871,7 @@ tbody tr:hover {
 } */
  /* ── Sponsors ───────────────────────────────────────────────── */
 .sponsors {
-  background: var(--color-surface);
+  background: var(--bg);
   padding-block: var(--space-xl);
 }
 
